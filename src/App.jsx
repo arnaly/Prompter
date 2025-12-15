@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { useState } from 'react'
 import Header from '@/components/Header.jsx'
 import CategoryCard from '@/components/CategoryCard.jsx'
@@ -34,7 +34,7 @@ function App() {
   const globalProgress = Math.round((completedCount / totalCategories) * 100)
 
   return (
-    <Router>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={
@@ -55,7 +55,7 @@ function App() {
         <Route path="/com-dissenyar-prompts" element={<ComDissenyarPromptsPage onComplete={handleCategoryComplete} />} />
         <Route path="/funcions-avancades" element={<FuncionsAvancadesPage onComplete={handleCategoryComplete} />} />
       </Routes>
-    </Router>
+    </>
   )
 }
 
