@@ -1,0 +1,43 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: rgba(97, 145, 137, 0.6);
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}

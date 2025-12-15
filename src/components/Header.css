@@ -1,0 +1,38 @@
+/* Header */
+.header-box{
+    border-bottom: 1px solid #fff;
+    max-height: 80px;
+    margin-top: 0;
+    max-width: 2560px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+}
+
+/* Logo */
+.header-logo {
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.header-logo:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+/* Title */
+
+.nav-bar {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GitHub link */
+
+.github-image {
+    max-width: 32px;
+    max-height: 32px;
+}
