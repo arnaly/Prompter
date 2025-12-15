@@ -38,7 +38,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={
-          <>
+          <div className='page-shell'>
             <div className='title-section'>
               <h1 className='title'>Coneix la IA generativa</h1>
               <h2 className='description'>Descobreix amb Prompter què és la intel·ligència artificial i per a què serveix. Aprèn a dissenyar bons prompts per obtenir els millors resultats i descobreix les funcions avançades de la IA per als més curiosos.</h2>
@@ -49,7 +49,7 @@ function App() {
               <CategoryCard title={'Funcions avançades de la IA'} link="/funcions-avancades" completed={completedCategories['funcions-avancades']} />
             </div>
             <Footer progress={globalProgress} />
-          </>
+          </div>
         } />
         <Route path="/historia-ia" element={<HistoriaIAPage onComplete={handleCategoryComplete} />} />
         <Route path="/com-dissenyar-prompts" element={<ComDissenyarPromptsPage onComplete={handleCategoryComplete} />} />

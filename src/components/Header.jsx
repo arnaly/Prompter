@@ -5,8 +5,10 @@ import LogoPrompter from '@/assets/logo-prompter.png'
 function Header() {
     return (
         <div className="header-box">
-            <img className='header-logo' src={LogoPrompter} alt="Logo de Prompter" />
-            <h1 className='header-title'>Prompter</h1>
+            <div className="brand">
+                <img className='header-logo' src={LogoPrompter} alt="Logo de Prompter" />
+                <h1 className='header-title'>Prompter</h1>
+            </div>
             <div className='nav-bar'>
                 <a className='github-link' href="https://github.com/arnaly/Prompter"><img className='github-image' src={GitHubDark} alt="Logo de GitHub" /></a>
             </div>

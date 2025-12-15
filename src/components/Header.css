@@ -1,38 +1,60 @@
-/* Header */
-.header-box{
-    border-bottom: 1px solid #fff;
-    max-height: 80px;
-    margin-top: 0;
-    max-width: 2560px;
+.header-box {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    width: 100%;
+    min-height: 88px;
+    max-height: 120px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 8px;
+    padding: 18px 32px;
+    backdrop-filter: blur(12px);
+    background: linear-gradient(90deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.15) 100%);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    position: relative;
 }
 
 /* Logo */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .header-logo {
     max-width: 48px;
     max-height: 48px;
+    filter: invert(1) brightness(1.2);
+    transition: transform 0.2s ease;
 }
 
 .header-logo:hover {
     cursor: pointer;
-    scale: 1.1;
+    transform: scale(1.06);
 }
 
-/* Title */
+.header-title {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
 
 .nav-bar {
     display: flex;
-    gap: 40px;
-    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    position: absolute;
+    right: 28px;
+}
+.github-link {
+    display: inline-flex;
     align-items: center;
 }
-
-/* GitHub link */
 
 .github-image {
     max-width: 32px;
     max-height: 32px;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.35));
 }
