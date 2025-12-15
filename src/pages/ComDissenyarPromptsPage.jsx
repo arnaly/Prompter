@@ -1,10 +1,14 @@
 import ContentPage from '@/components/ContentPage'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+import img2_1 from '@/assets/content-images/2-1.jpg'
+import img2_2 from '@/assets/content-images/2-2.jpg'
+import img2_3 from '@/assets/content-images/2-3.jpg'
 
 const subtemes = [
   {
     title: "Què és un prompt?",
+    image: img2_1,
     content: (
       <>
         <p>Un prompt és la instrucció, pregunta o indicació que una persona dona a una eina d’intel·ligència artificial generativa perquè generi una resposta. Pot ser una frase curta, una pregunta concreta o un text més llarg amb diversos detalls.</p>
@@ -15,6 +19,7 @@ const subtemes = [
   },
   {
     title: "Què és el disseny de prompts?",
+    image: img2_2,
     content: (
       <>
         <p>El disseny de prompts és el procés de pensar i estructurar com formulem una instrucció perquè la IA respongui de la manera més adequada possible. No es tracta només de què demanem, sinó de com ho demanem.</p>
@@ -25,10 +30,11 @@ const subtemes = [
   },
   {
     title: "Consells bàsics per escriure bons prompts",
+    image: img2_3,
     content: (
       <>
         <p>Encara que no existeixi un prompt perfecte, hi ha algunes bones pràctiques bàsiques que poden millorar molt els resultats:</p>
-        <ul style={{ listStyleType: 'disc', paddingLeft: '20px', color: 'rgba(255, 255, 255, 0.9)', fontSize: '18px', lineHeight: '1.8', marginBottom: '20px' }}>
+        <ul>
           <li>Escriu amb claredat i evita frases ambigües</li>
           <li>Indica quin és l’objectiu de la resposta</li>
           <li>Afegeix context quan sigui necessari</li>
@@ -74,7 +80,7 @@ function ComDissenyarPromptsPage({ onComplete }) {
       mainTitle={subtema.title}
       subtitle=""
       content={<div className="subtema-content">{subtema.content}</div>}
-      image={null}
+      image={subtema.image}
       imageAlt="Dissenyar Prompts"
       onPrevious={handlePrevious}
       onNext={handleNext}

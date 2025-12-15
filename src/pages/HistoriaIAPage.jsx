@@ -1,10 +1,15 @@
 import ContentPage from '@/components/ContentPage'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+import img1_1 from '@/assets/content-images/1-1.jpg'
+import img1_2 from '@/assets/content-images/1-2.jpg'
+import img1_3 from '@/assets/content-images/1-3.jpg'
+import img1_4 from '@/assets/content-images/1-4.jpg'
 
 const subtemes = [
   {
     title: "Què és la IA generativa?",
+    image: img1_1,
     content: (
       <>
         <p>La intel·ligència artificial generativa és un tipus d'IA capaç de crear contingut nou a partir de dades existents. A diferència d'altres sistemes que només analitzen informació, la IA generativa pot produir textos, imatges, música, codi o vídeos.</p>
@@ -14,6 +19,7 @@ const subtemes = [
   },
   {
     title: "Com funciona la IA generativa?",
+    image: img1_2,
     content: (
       <>
         <p>La IA generativa funciona mitjançant models entrenats amb enormes quantitats de dades, que aprenen com s'estructura el llenguatge, les imatges o altres tipus de contingut.</p>
@@ -24,6 +30,7 @@ const subtemes = [
   },
   {
     title: "Breu història de la IA generativa",
+    image: img1_3,
     content: (
       <>
         <p>Els orígens de la IA es remunten a mitjan segle XX, però la IA generativa moderna ha experimentat un gran impuls en els darrers anys gràcies a l'augment de la potència de càlcul i la disponibilitat de dades.</p>
@@ -34,6 +41,7 @@ const subtemes = [
   },
   {
     title: "Riscos i limitacions",
+    image: img1_4,
     content: (
       <>
         <p>Tot i els seus avantatges, la IA generativa presenta riscos i limitacions. Pot generar informació incorrecta, inventar dades o reproduir biaixos presents en les dades d'entrenament.</p>

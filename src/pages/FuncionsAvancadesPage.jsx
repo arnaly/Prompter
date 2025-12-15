@@ -1,15 +1,19 @@
 import ContentPage from '@/components/ContentPage'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+import img3_1 from '@/assets/content-images/3-1.jpg'
+import img3_2 from '@/assets/content-images/3-2.jpg'
+import img3_3 from '@/assets/content-images/3-3.jpg'
 
 const subtemes = [
   {
     title: "Afegir arxius als prompts",
+    image: img3_1,
     content: (
       <>
         <p>Algunes eines permeten afegir arxius (com documents, imatges o PDFs) perquè la IA els pugui analitzar i utilitzar com a context.</p>
         <p>Això permet, per exemple:</p>
-        <ul style={{ listStyleType: 'disc', paddingLeft: '20px', color: 'rgba(255, 255, 255, 0.9)', fontSize: '18px', lineHeight: '1.8', marginBottom: '20px' }}>
+        <ul>
           <li>Resumir documents llargs</li>
           <li>Analitzar textos propis</li>
           <li>Extreure informació concreta d’un arxiu</li>
@@ -20,11 +24,12 @@ const subtemes = [
   },
   {
     title: "Mode agent o tasques guiades",
+    image: img3_2,
     content: (
       <>
         <p>El mode agent permet que la IA executi una tasca seguint diversos passos, en lloc de donar una resposta única. L’usuari defineix un objectiu i la IA treballa de manera progressiva per assolir-lo.</p>
         <p>Aquesta funció s’utilitza per:</p>
-        <ul style={{ listStyleType: 'disc', paddingLeft: '20px', color: 'rgba(255, 255, 255, 0.9)', fontSize: '18px', lineHeight: '1.8', marginBottom: '20px' }}>
+        <ul>
           <li>Dividir problemes complexos en passos</li>
           <li>Planificar tasques o projectes</li>
           <li>Simular processos de treball</li>
@@ -35,11 +40,12 @@ const subtemes = [
   },
   {
     title: "Memòria i context prolongat",
+    image: img3_3,
     content: (
       <>
         <p>Algunes eines poden recordar informació dins d’una conversa o projecte, mantenint el context al llarg del temps. Això permet interaccions més coherents i continuades.</p>
         <p>Gràcies a aquesta funció, la IA pot:</p>
-        <ul style={{ listStyleType: 'disc', paddingLeft: '20px', color: 'rgba(255, 255, 255, 0.9)', fontSize: '18px', lineHeight: '1.8', marginBottom: '20px' }}>
+        <ul>
           <li>Mantenir el fil d’una conversa llarga</li>
           <li>Adaptar-se a preferències indicades prèviament</li>
           <li>Treballar amb informació acumulada</li>
@@ -83,7 +89,7 @@ function FuncionsAvancadesPage({ onComplete }) {
       mainTitle={subtema.title}
       subtitle=""
       content={<div className="subtema-content">{subtema.content}</div>}
-      image={null}
+      image={subtema.image}
       imageAlt="Funcions Avançades"
       onPrevious={handlePrevious}
       onNext={handleNext}
